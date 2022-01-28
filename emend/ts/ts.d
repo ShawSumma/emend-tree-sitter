@@ -1,4 +1,4 @@
-module d_tree_sitter;
+module emend.ts;
 
 extern (C):
 

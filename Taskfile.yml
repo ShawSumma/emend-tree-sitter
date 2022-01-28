@@ -5,7 +5,7 @@ tasks:
   dev: dub build
   build: dub build --build=release
 
-  format: dub run dfmt -- --inplace ./src ./script
+  format: dub run dfmt -- --inplace ./emend ./script
 
   lint: dub lint
 
@@ -13,10 +13,10 @@ tasks:
     - dub clean
     - '
       {{if eq OS "windows"}} powershell -C "
-      if (test-path ./src/d_tree_sitter/gen) { rm -r -force ./src/d_tree_sitter/gen }
-      if (test-path ./src/d_tree_sitter/build) { rm -r -force ./src/d_tree_sitter/build }
-      if (test-path ./src/build) { rm -r -force ./src/build }
-      if (test-path ./src/d_tree_sitter/libc.d) { rm -force ./src/d_tree_sitter/libc.d }"
+      if (test-path ./emend/ts/gen) { rm -r -force ./emend/ts/gen }
+      if (test-path ./emend/ts/build) { rm -r -force ./emend/ts/build }
+      if (test-path ./emend/build) { rm -r -force ./emend/build }
+      if (test-path ./emend/ts/libc.d) { rm -force ./emend/ts/libc.d }"
       {{else}}
-      rm -rf ./src/d_tree_sitter/gen ./src/d_tree_sitter/build ./src/build ./.dub ./src/d_tree_sitter/libc.d {{end}}
+      rm -rf ./emend/ts/gen ./emend/ts/build ./emend/build ./.dub ./emend/ts/libc.d {{end}}
       '

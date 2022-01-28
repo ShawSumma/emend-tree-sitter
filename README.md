@@ -1,8 +1,6 @@
-# d-tree-sitter
+# EmendTreeSitter
 
-[![CI](https://github.com/aminya/d-tree-sitter/actions/workflows/CI.yml/badge.svg)](https://github.com/aminya/d-tree-sitter/actions/workflows/CI.yml)
-
-The D bindings for tree-sitter, a library for incremental parsing.
+The D bindings for tree-sitter, a library for incremental parsing. Mdified for use in emend.
 
 # Build
 
@@ -17,7 +15,7 @@ To set up a reproducible build environment, you can run [setup-cpp](https://gith
 # Usage
 
 ```d
-import d_tree_sitter;
+import emend.ts;
 ```
 
 # License
