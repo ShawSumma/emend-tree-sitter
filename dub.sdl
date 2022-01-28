@@ -1,4 +1,4 @@
-name "emend_tree_sitter"
+name "emend-ts"
 description "The D bindings for tree-sitter"
 authors "Amin Yahyaabadi"
 copyright "Copyright © 2021, Amin Yahyaabadi"
