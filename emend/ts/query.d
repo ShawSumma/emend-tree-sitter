@@ -1,13 +1,13 @@
-module query;
+module emend.ts.query;
 
 import std.algorithm;
 import std.array;
 import std.conv;
 import std.string;
-import language;
-import node;
-import tree_visitor;
-import other;
+import emend.ts.language;
+import emend.ts.node;
+import emend.ts.tree_visitor;
+import emend.ts.other;
 import libc : TSQuery, TSQueryError, TSQueryMatch, TSQueryCursor,
   TSQueryCapture, TSQueryPredicateStep;
 

@@ -1,11 +1,11 @@
-module parser;
+module emend.ts.parser;
 
 extern (C):
 
-import language;
-import tree;
-import tree_visitor;
-import tree_printer;
+import emend.ts.language;
+import emend.ts.tree;
+import emend.ts.tree_visitor;
+import emend.ts.tree_printer;
 import libc : TSTree;
 
 import std.typecons : Nullable;

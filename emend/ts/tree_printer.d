@@ -1,9 +1,9 @@
-module tree_printer;
+module emend.ts.tree_printer;
 
 extern (C):
 
-import tree_visitor;
-import tree_cursor;
+import emend.ts.tree_visitor;
+import emend.ts.tree_cursor;
 import bc.string : String, nogcFormat;
 
 /** visit all the nodes and get information about each

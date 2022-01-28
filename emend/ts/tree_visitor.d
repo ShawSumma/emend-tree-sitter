@@ -1,8 +1,8 @@
-module tree_visitor;
+module emend.ts.tree_visitor;
 
 extern (C):
 
-import tree_cursor;
+import emend.ts.tree_cursor;
 
 /** An interface that describes the minimum functions that a visitor requires */
 interface TreeVisitor

@@ -1,4 +1,4 @@
-module language;
+module emend.ts.language;
 
 extern (C):
 

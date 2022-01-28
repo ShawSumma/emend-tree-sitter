@@ -1,11 +1,11 @@
-module node;
+module emend.ts.node;
 
 extern (C):
 
-import language;
-import tree_cursor;
-import tree_visitor;
-import other;
+import emend.ts.language;
+import emend.ts.tree_cursor;
+import emend.ts.tree_visitor;
+import emend.ts.other;
 
 import std : iota, Nullable;
 import std.string : fromStringz, toStringz;

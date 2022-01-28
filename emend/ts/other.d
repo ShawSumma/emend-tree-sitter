@@ -1,4 +1,4 @@
-module other;
+module emend.ts.other;
 
 extern (C):
 

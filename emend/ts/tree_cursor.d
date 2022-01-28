@@ -1,8 +1,8 @@
-module tree_cursor;
+module emend.ts.tree_cursor;
 
 extern (C):
 
-import node;
+import emend.ts.node;
 
 import std.exception : enforce;
 import std.string : fromStringz;

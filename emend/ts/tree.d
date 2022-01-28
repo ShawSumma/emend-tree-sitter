@@ -1,11 +1,11 @@
-module tree;
+module emend.ts.tree;
 
 extern (C):
 
-import language;
-import node;
-import tree_visitor;
-import other;
+import emend.ts.language;
+import emend.ts.node;
+import emend.ts.tree_visitor;
+import emend.ts.other;
 import libc : TSTree;
 
 /** A tree that represents the syntactic structure of a source code file. */
