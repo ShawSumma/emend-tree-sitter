@@ -5,17 +5,16 @@ copyright "Copyright © 2021, Amin Yahyaabadi"
 license "Apache-2.0"
 
 targetType "library"
-targetPath "./emend/build"
+targetPath "./src/build"
 
 preBuildCommands "rdmd ./script/emend_ts.d"
 
-sourcePaths "./emend"
-importPaths "./emend" "./emend/ts"
-mainSourceFile "./emend/ts/ts.d"
-sourceFiles "./emend/ts/libc.d" // gen by dpp
-extraDependencyFiles "./emend/tree-sitter-version.txt" "./package.json" "./emend/meson.build"
+sourcePaths "./src"
+importPaths "./src" "./src/ts"
+sourceFiles "./src/ts/libc.d" // gen by dpp
+extraDependencyFiles "./src/tree-sitter-version.txt" "./package.json" "./src/meson.build"
 
-lflags "./emend/build/libtree_sitter.a"
+lflags "./src/build/libtree_sitter.a"
 dependency "bc-string" version="1.2.2"
 
 // -------- Build Options and configurations --------

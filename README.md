@@ -15,7 +15,7 @@ To set up a reproducible build environment, you can run [setup-cpp](https://gith
 # Usage
 
 ```d
-import emend.ts;
+import emend.ts.ts;
 ```
 
 # License

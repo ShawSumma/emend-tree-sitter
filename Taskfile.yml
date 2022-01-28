@@ -5,7 +5,7 @@ tasks:
   dev: dub build
   build: dub build --build=release
 
-  format: dub run dfmt -- --inplace ./emend ./script
+  format: dub run dfmt -- --inplace ./src ./script
 
   lint: dub lint
 
@@ -13,10 +13,10 @@ tasks:
     - dub clean
     - '
       {{if eq OS "windows"}} powershell -C "
-      if (test-path ./emend/ts/gen) { rm -r -force ./emend/ts/gen }
-      if (test-path ./emend/ts/build) { rm -r -force ./emend/ts/build }
-      if (test-path ./emend/build) { rm -r -force ./emend/build }
-      if (test-path ./emend/ts/libc.d) { rm -force ./emend/ts/libc.d }"
+      if (test-path ./src/ts/gen) { rm -r -force ./src/ts/gen }
+      if (test-path ./src/ts/build) { rm -r -force ./src/ts/build }
+      if (test-path ./src/build) { rm -r -force ./src/build }
+      if (test-path ./src/ts/libc.d) { rm -force ./src/ts/libc.d }"
       {{else}}
-      rm -rf ./emend/ts/gen ./emend/ts/build ./emend/build ./.dub ./emend/ts/libc.d {{end}}
+      rm -rf ./src/ts/gen ./src/ts/build ./src/build ./.dub ./src/ts/libc.d {{end}}
       '

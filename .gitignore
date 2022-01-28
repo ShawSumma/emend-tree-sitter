@@ -1,7 +1,7 @@
-emend/build/
-emend/ts/build/
-emend/ts/gen/
-emend/ts/libc.d
+src/build/
+src/ts/build/
+src/ts/gen/
+src/ts/libc.d
 
 # Compiled Object files
 *.o

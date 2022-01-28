@@ -51,16 +51,16 @@ jobs:
           path: |
             ~/.dub
             ~/AppData/Local/dub
-            ./emend/*/build/*.lib
-            ./emend/*/build/*.a
+            ././src/*/build/*.lib
+            ././src/*/build/*.a
             ./.dub
             ~/llvm
             ./**/download-cache
             ~/.cache/pip
             ~/AppData/Local/pip/cache
-          key: "emend-tree-sitter-OS:${{ matrix.os }}-D:${{ matrix.d }}-Clang:${{ matrix.clang }}-${{ matrix.meson }}-${{ matrix.ninja }}-${{ hashFiles('./dub.sdl') }}-${{ hashFiles('./emend/ts/tree_sitter/tree-sitter-version.txt') }}"
+          key: "./src-tree-sitter-OS:${{ matrix.os }}-D:${{ matrix.d }}-Clang:${{ matrix.clang }}-${{ matrix.meson }}-${{ matrix.ninja }}-${{ hashFiles('./dub.sdl') }}-${{ hashFiles('././src/ts/tree_sitter/tree-sitter-version.txt') }}"
           restore-keys: |
-            "emend-tree-sitter-OS:${{ matrix.os }}-D:${{ matrix.d }}-Clang:${{ matrix.clang }}"
+            "./src-tree-sitter-OS:${{ matrix.os }}-D:${{ matrix.d }}-Clang:${{ matrix.clang }}"
 
       # Setup compilers and tools
       - name: Setup D

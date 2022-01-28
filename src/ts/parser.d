@@ -2,7 +2,7 @@ module emend.ts.parser;
 
 extern (C):
 
-import emend.ts.language;
+import emend.ts.lang;
 import emend.ts.tree;
 import emend.ts.tree_visitor;
 import emend.ts.tree_printer;

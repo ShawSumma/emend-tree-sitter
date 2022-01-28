@@ -2,7 +2,7 @@ module emend.ts.tree;
 
 extern (C):
 
-import emend.ts.language;
+import emend.ts.lang;
 import emend.ts.node;
 import emend.ts.tree_visitor;
 import emend.ts.other;
